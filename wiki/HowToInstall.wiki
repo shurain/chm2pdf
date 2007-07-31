@@ -1,5 +1,5 @@
 #summary Installation instructions
-#labels Phase-Deploy,Featured
+#labels Featured,Phase-Deploy
 
   * Download the archive
   * Unzip it (tar -xzvf chm2pdf-x.x.x.tar.gz)
@@ -7,4 +7,6 @@
   * Become root
   * Type "python setup.py install"
   * Enjoy
+
+
 
