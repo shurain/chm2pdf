@@ -1,4 +1,7 @@
 #summary Usage of chm2pdf
 #labels Featured
 
-chm2pdf [input file] [output filename]
+Usage:
+{{{chm2pdf [input file] [output filename]}}}
+
+If the output filename is omitted, .pdf is added to the input filename.
