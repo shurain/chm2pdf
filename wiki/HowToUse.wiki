@@ -1,0 +1,4 @@
+#summary Usage of chm2pdf
+#labels Featured
+
+chm2pdf [input file] [output filename]
