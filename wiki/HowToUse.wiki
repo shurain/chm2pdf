@@ -2,6 +2,221 @@
 #labels Featured
 
 Usage:
-{{{chm2pdf [input file] [output filename]}}}
 
-If the output filename is omitted, .pdf is added to the input filename.
+Usage:
+        {{{/usr/bin/chm2pdf [--book / --webpage] [options] input_filename [output_filename]}}}
+
+Either '--book' or '--webpage' MUST be given!
+Only one of the two options can be present, not both!
+See below for description.
+
+Options:
+
+        --bodycolor color
+                Specifies the background color for all pages.
+        --bodyfont {courier,helvetica,monospace,sans,serif,times}
+        --bodyimage filename.{bmp,gif,jpg,png}
+        --book
+                Specifies that the HTML sources are structured (headings, chapters, etc.).
+        --bottom margin{in,cm,mm}
+                Specifies the bottom margin in points (no suffix or ##pt), inches  (##in),  centimeters  (##cm),  or millimeters (##mm).
+        --browserwidth pixels
+                See http://www.htmldoc.org/newsgroups.php?ghtmldoc.general+v:3465
+        --charset {cp-874...1258,iso-8859-1...8859-15,koi8-r}
+                Specifies the ISO character set to use for the output.
+        --color
+                Specifies that PDF output should be in color.
+        --compression[=level]
+
+        --continuous
+                Specifies  that  the  HTML  sources are unstructured (plain web pages).
+                No page breaks are inserted between each file or URL in the output.
+        --cookies 'name="value with space"; name=value'
+
+        --datadir directory
+                Specifies the  location  of  the  HTMLDOC  data  files,  usually  /usr/share/htmldoc  or  C:\Program Files\HTMLDOC
+        --duplex
+                Specifies that the output should be formatted for double-sided printing.
+        --effectduration {0.1..10.0}
+                Specifies the duration in seconds of PDF page transition effects.
+        --embedfonts
+                Specifies that fonts should be embedded in PDF output.
+        --encryption
+                Enables encryption of PDF files.
+        --extract-only
+                Extract the HTML files from the CHM file and stop.
+                The extracted files will be found in CHM2PDF_WORK_DIR/input_filename_without_extension.
+        --firstpage {p1,toc,c1}
+
+        --fontsize {4.0..24.0}
+                Specifies the default font size for body text.
+        --fontspacing {1.0..3.0}
+                Specifies  the  default  line  spacing  for body text.
+                The line spacing is a multiplier for the font size, so a value of 1.2
+                will provide an additional 20% of space between the lines.
+        --footer fff
+
+        {--format, -t} {pdf11,pdf12,pdf13,pdf14}
+                Specifies the output format: pdf11
+                pdf11 (PDF 1.1/Acrobat 2.0), pdf12 (PDF 1.2/Acrobat 3.0),
+                pdf or pdf13 (PDF  1.3/Acrobat  4.0),  or  pdf14 (PDF 1.4/Acrobat 5.0)
+        --gray
+
+        --header fff
+
+        --header1 fff
+
+        --headfootfont {courier{-bold,-oblique,-boldoblique},
+                helvetica{-bold,-oblique,-boldoblique},
+                monospace{-bold,-oblique,-boldoblique},
+                sans{-bold,-oblique,-boldoblique},
+                serif{-bold,-italic,-bolditalic},
+                times{-roman,-bold,-italic,-bolditalic}}
+                        Sets the font to use on headers and footers.
+        --headfootsize {6.0..24.0}
+                Sets the size of the font to use on headers and footers.
+        --headingfont {courier,helvetica,monospace,sans,serif,times}
+                Sets the typeface to use for headings.
+        --help
+                Displays a summary of command-line options.
+        --hfimage0 filename.{bmp,gif,jpg,png}
+
+        --hfimage1 filename.{bmp,gif,jpg,png}
+
+        --hfimage2 filename.{bmp,gif,jpg,png}
+
+        --hfimage3 filename.{bmp,gif,jpg,png}
+
+        --hfimage4 filename.{bmp,gif,jpg,png}
+
+        --hfimage5 filename.{bmp,gif,jpg,png}
+
+        --hfimage6 filename.{bmp,gif,jpg,png}
+
+        --hfimage7 filename.{bmp,gif,jpg,png}
+
+        --hfimage8 filename.{bmp,gif,jpg,png}
+
+        --hfimage9 filename.{bmp,gif,jpg,png}
+
+        --jpeg quality
+                Sets the JPEG compression level to use for large images. A value of 0 disables JPEG compression.
+        --landscape
+
+        --left margin{in,cm,mm}
+                Specifies the left margin in points (no suffix or ##pt), inches (##in), centimeters (##cm), or  millimeters (##mm).
+        --linkcolor color
+                Sets the color of links. You can use well-known color names like blue, or the usual #RRGGBB notation.
+        --links
+                Enables generation of links in PDF files (default).
+        --linkstyle {plain,underline}
+                Sets the style of links.
+        --logoimage filename.{bmp,gif,jpg,png}
+                Specifies an image to be used as a logo in the header or footer in a PDF document.
+        --logoimage filename.{bmp,gif,jpg,png}
+                Note that you need to use the --header and/or --footer options with the l parameter.
+        --no-compression
+                Disables compression of PDF file.
+        --no-duplex
+                Disables double-sided printing.
+        --no-embedfonts
+                Specifies that fonts should not be embedded in PDF and PostScript output.
+        --no-encryption
+                Disables document encryption.
+        --no-links
+                Disables generation of links in a PDF document.
+        --no-localfiles
+
+        --no-numbered
+                Disables automatic heading numbering.
+        --no-overflow
+
+        --no-strict
+                Disables strict HTML input checking.
+        --no-title
+                Disables generation of a title page.
+        --no-toc
+                Disables generation of a table of contents.
+        --numbered
+                Numbers all headings in a document.
+        --nup {1,2,4,6,9,16}
+                Sets  the  number of pages that are placed on each output page.  Valid values are 1, 2, 4, 6, 9, and 16.
+        {--outfile, -f} filename{.pdf}
+                Specifies the name of the output file. If no ending is given, ".pdf" is used.
+        --overflow
+
+        --owner-password password
+                Sets the owner password for encrypted PDF files.
+        --pageduration {1.0..60.0}
+                Sets the view duration of a page in a PDF document.
+        --pageeffect {none,bi,bo,d,gd,gdr,gr,hb,hsi,hso,vb,vsi,vso,wd,wl,wr,wu}
+                Specifies the page transition effect for all pages; this attribute is ignored by all Adobe PDF viewers..
+        --pagelayout {single,one,twoleft,tworight}
+                Specifies the initial layout of pages for a PDF file.
+        --pagemode {document,outline,fullscreen}
+                Specifies the initial viewing mode for a PDF file.
+        --path "dir1;dir2;dir3;...;dirN"
+                Specifies a search path for files in a document.
+        --permissions {all,annotate,copy,modify,print,no-annotate,no-copy,no-modify,no-print,none}
+                Specifies document permissions for encrypted PDF files. Separate multiple permissions with commas.
+        --portrait
+
+        --quiet
+                Suppresses all messages, even error messages.
+        --right margin{in,cm,mm}
+                Specifies the right margin in points (no suffix or ##pt), inches (##in), centimeters (##cm), or millimeters (##mm).
+        --size {letter,a4,WxH{in,cm,mm},etc}
+                Specifies the page size using a standard name or in points (no suffix or ##x##pt), inches (##x##in),
+                centimeters (##x##cm), or millimeters (##x##mm). The standard sizes that  are  currently  recognized
+                are "letter" (8.5x11in), "legal" (8.5x14in), "a4" (210x297mm), and "universal" (8.27x11in).
+        --strict
+                Enables strict HTML input checking.
+        --textcolor color
+                Specifies the default color of all text.
+        --textfont {courier,helvetica,monospace,sans,serif,times}
+
+        --title
+                Enables the generation of a title page.
+        --titlefile filename.{htm,html,shtml}
+                Specifies  the  file to use for the title page. If the file is an image then the title page
+                is automatically generated using the document meta data and image title.
+        --titleimage filename.{bmp,gif,jpg,png}
+                Specifies  the  image to use for the title page. The title page is automatically
+                generated using the document meta data and title image.
+        --tocfooter fff
+                Sets the page footer to use on table-of-contents pages. See below for the format of fff.
+        --tocheader fff
+                Sets the page header to use on table-of-contents pages. See below for the format of fff.
+        --toclevels levels
+                Sets the number of levels in the table-of-contents.
+        --toctitle string
+                Sets the title for the table-of-contents.
+        --top margin{in,cm,mm}
+                Specifies the top margin in points (no suffix or ##pt), inches (##in), centimeters (##cm),  or  millimeters (##mm).
+        --user-password password
+                Specifies the user password for encryption of PDF files.
+        --version
+                Displays the current version number.
+        --webpage
+                Specifies  that  the  HTML  sources  are  unstructured  (plain web pages).
+                A page break is inserted between each file or URL in the output.
+
+        fff
+                Heading format string; each 'f' can be one of:
+
+                        . = blank
+                        / = n/N arabic page numbers (1/3, 2/3, 3/3)
+                        : = c/C arabic chapter page numbers (1/2, 2/2, 1/4, 2/4, ...)
+                        1 = arabic numbers (1, 2, 3, ...)
+                        a = lowercase letters
+                        A = uppercase letters
+                        c = current chapter heading
+                        C = current chapter page number (arabic)
+                        d = current date
+                        D = current date and time
+                        h = current heading
+                        i = lowercase roman numerals
+                        I = uppercase roman numerals
+                        l = logo image
+                        t = title text
+                        T = current time
