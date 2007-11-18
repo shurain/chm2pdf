@@ -2,8 +2,6 @@
 #labels Featured
 
 Usage:
-
-Usage:
         {{{/usr/bin/chm2pdf [--book / --webpage] [options] input_filename [output_filename]}}}
 
 Either '--book' or '--webpage' MUST be given!
