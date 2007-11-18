@@ -8,5 +8,5 @@
   * Type "python setup.py install"
   * Enjoy
 
-
-
+*PLEASE AVOID POLLUTING THIS PAGE WITH COMMENTS*
+If you have installation problems, use the Google group.
