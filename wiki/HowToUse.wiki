@@ -2,7 +2,7 @@
 #labels Featured
 
 Usage:
-        {{{/usr/bin/chm2pdf [--book / --webpage] [options] input_filename [output_filename]}}}
+        {{{/usr/bin/chm2pdf (--book / --webpage) [options] input_filename [output_filename]}}}
 
 Either '--book' or '--webpage' MUST be given!
 Only one of the two options can be present, not both!
