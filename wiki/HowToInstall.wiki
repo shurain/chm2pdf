@@ -1,6 +1,16 @@
 #summary Installation instructions
 #labels Featured,Phase-Deploy
 
+=Dependencies=
+You need those packages installed and working:
+
+    * chmlib
+    * pychm
+    * htmldoc 
+
+On Fedora, it has been reported that the chmlib package is missing some essential files. You need to look for chmlib-bin or to compile chmlib by hand.
+
+=Install=
   * Download the archive
   * Unzip it (tar -xzvf chm2pdf-x.x.x.tar.gz)
   * Enter the directory
