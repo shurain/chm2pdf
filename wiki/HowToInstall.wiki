@@ -4,9 +4,20 @@
 =Dependencies=
 You need those packages installed and working:
 
+Gentoo:
     * chmlib
     * pychm
     * htmldoc 
+
+Ubuntu/Kubuntu/Debian:
+    * libchm
+    * libchm-bin
+    * libchm-dev
+    * python-chm 
+    * html-doc 
+    * htmldoc-common
+
+Analogous packages should exist on most other Linux/BSD distributions.
 
 On Fedora, it has been reported that the chmlib package is missing some essential files. You need to look for chmlib-bin or to compile chmlib by hand.
 
