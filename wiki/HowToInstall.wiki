@@ -18,8 +18,14 @@ Ubuntu/Kubuntu/Debian:
     * htmldoc-common
 
 Analogous packages should exist on most other Linux/BSD distributions.
+Users have reported success on Mac OS X, however currently this is unsupported.
 
 On Fedora, it has been reported that the chmlib package is missing some essential files. You need to look for chmlib-bin or to compile chmlib by hand.
+
+If you install chmlib from source, do not forget to use the --enable-examples on chmLib, otherwise this script will throw a bunch of exceptions, and will fail.
+
+If you use Mac OS X, and you use darwin ports (port on the cmdline), be aware that the chmlib will NOT be built with this option. You can, however, separately download chmlib and build it yourself with this option, install it, and then re-run the script.
+
 
 =Install=
   * Download the archive
