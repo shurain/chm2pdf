@@ -6,8 +6,8 @@ As of Ubuntu 8.04, chm2pdf is in the universe repository. You can therefore inst
 
 It also seems that it is included in FreeBSD ports. An unofficial Gentoo ebuild is available (check bugs.gentoo.org)
 
-=Dependencies=
-
+=From source=
+==Dependencies==
 If you want to install chm2pdf from source, you need those packages installed and working:
 Gentoo:
     * chmlib
@@ -35,7 +35,7 @@ If you install chmlib from source, do not forget to use the --enable-examples on
 If you use Mac OS X, and you use darwin ports (port on the cmdline), be aware that the chmlib will NOT be built with this option. You can, however, separately download chmlib and build it yourself with this option, install it, and then re-run the script.
 
 
-=Install=
+==Install==
   * Download the archive
   * Unzip it (tar -xzvf chm2pdf-x.x.x.tar.gz)
   * Enter the directory
