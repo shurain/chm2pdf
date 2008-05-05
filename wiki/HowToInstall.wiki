@@ -10,12 +10,15 @@ Gentoo:
     * htmldoc 
 
 Ubuntu/Kubuntu/Debian:
+As of Ubuntu 8.04, *chm2pdf* is in the universe repository. You can install chm2pdf from your package manager. Hooray!
+Anyway, you should need:
     * libchm
     * libchm-bin
     * libchm-dev
     * python-chm 
     * html-doc 
     * htmldoc-common
+
 
 Analogous packages should exist on most other Linux/BSD distributions.
 Users have reported success on Mac OS X, however currently this is unsupported.
